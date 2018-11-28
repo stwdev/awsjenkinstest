@@ -4,7 +4,7 @@ pipeline {
       stage('Build') {
         steps {
           awsCodeBuild projectName: '#awsjenkinstest',
-                       credentialsId: '#test12345',
+                       credentialsId: 'test12345',
                        credentialsType: 'jenkins',
                        region: 'us-west-1',
                        sourceControlType: 'project'
